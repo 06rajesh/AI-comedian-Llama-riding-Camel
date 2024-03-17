@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "ai-comedian-llama-riding-camel"
+version = "0.1.0"
+description = "AI comedian repo made using Mistral-7b LLM and finetuned using PEFT"
+authors = ["Rajesh Baidya <abhi.crushefix@gmail.com>"]
+readme = "README.md"
+packages = [{include = "ai_comedian_llama_riding_camel"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+optimum = "^1.12.0"
+transformers = "^4.32.0"
+accelerate = "^0.28.0"
+peft = "^0.9.0"
+auto-gptq = "^0.7.1"
+datasets = "^2.18.0"
+textblob = "^0.18.0.post0"
+dotenv = "^0.0.5"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
